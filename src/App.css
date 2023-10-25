@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;800&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  font-size: 500;
+}
 .App {
   text-align: center;
 }
@@ -34,5 +42,12 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@layer components {
+  .headerbg {
+    background: url(./images/headerbg.png) center;
+    background-size: cover;
   }
 }
